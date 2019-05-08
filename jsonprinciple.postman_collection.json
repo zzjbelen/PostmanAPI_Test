@@ -112,12 +112,14 @@
 							"});",
 							"",
 							"pm.test(\"Response must be valid and have a body\", function () {",
-							"     // assert that the status code is 200",
-							"     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
-							"     // assert that the response has a valid JSON body",
+							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
-							"     pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
-							"});"
+							"     pm.response.to.be.json;",
+							"});",
+							"pm.test(\"Validate User data count\", function(){",
+							"    var jsonData = pm.response.json();",
+							"pm.expect(jsonData.length).to.equal(10)",
+							"})"
 						],
 						"type": "text/javascript"
 					}
