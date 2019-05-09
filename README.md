@@ -36,8 +36,9 @@
 
 #How to run the Test
 -Before running the test, you must have Postman installed in your machine.
+#download link : https://www.getpostman.com/downloads/
 -Once installed, you can proceed.
-1. Download file in Github
+1. Download Collection in Github
 	url: "https://github.com/zzjbelen/PostmanAPI_Test"
 	filename:jsonprinciple.postman_collection.json
 2. Open Postman application
